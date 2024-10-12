@@ -8,15 +8,16 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/edUserInput"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
         android:inputType="text"
         android:text="Name"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="159dp" />
+        tools:layout_editor_absoluteY="174dp" />
 
     <Button
         android:id="@+id/button"
@@ -24,27 +25,28 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:text="Button"
+        android:onClick="onBtnCountClick"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/edUserInput" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvCountResult"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="TextView"
+        android:text="Hello world"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spSelectionOptions"
         android:layout_width="409dp"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/tvCountResult"
         tools:layout_editor_absoluteX="1dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
